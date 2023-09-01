@@ -19,7 +19,10 @@
       <a href="#" class="header__logo">GabrieL.</a>
 
       <div id="mySidepanel" class="header__sidepanel">
-        <a href="javascript:void(0)" class="header__closebtn" onclick="closeNav()"
+        <a
+          href="javascript:void(0)"
+          class="header__closebtn"
+          onclick="closeNav()"
           >&times;</a
         >
         <a href="#home"><i class="bx bxs-home"></i> Home</a>
@@ -176,6 +179,14 @@
               <p><button class="portfolio__button">PROWESS</button></p>
             </div>
           </div>
+        </div>
+        <div class="portfolio__more">
+          <a
+            href="https://drive.google.com/file/d/1IKXfYsowCm6W0_rjYUWFaufuW27pX_6K/view?usp=sharing"
+            target="_blank"
+            class="btn"
+            >More</a
+          >
         </div>
       </div>
     </section>
@@ -426,7 +437,16 @@
           <p>
             Cargo de desenvolvedor sênior na equipe de criação do aplicativo X.
           </p>
+          <div class="experience__more">
+            <a
+              href="https://drive.google.com/file/d/1IKXfYsowCm6W0_rjYUWFaufuW27pX_6K/view?usp=sharing"
+              target="_blank"
+              class="btn"
+              >More</a
+            >
+          </div>
         </div>
+
         <div class="experience__right">
           <div class="experience__box">
             <h3>9</h3>
@@ -587,8 +607,19 @@
             placeholder="Write in here"
             required
           ></textarea>
-          <button type="submit">Send</button>
+          <input
+            type="hidden"
+            name="_next"
+            value="http://127.0.0.1:5501/obrigado.html"
+          />
+          <button type="submit" id="myBtn">Send</button>
           <input type="hidden" name="_captcha" value="false" />
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>Obrigado! Recebido a mensagem com sucesso.</p>
+            </div>
+          </div>
         </form>
       </div>
 

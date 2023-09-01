@@ -84,7 +84,6 @@ body {
   margin-left: 50px;
 }
 
-/* Style the button that is used to open the sidepanel */
 .header__openbtn {
   font-size: 25px;
   cursor: pointer;
@@ -139,7 +138,7 @@ body {
   height: 100%;
   background: #081b29;
   animation: showRight 1s ease forwards;
-  animation-delay: 1s;
+  animation-delay: 0.3s;
 }
 
 .home__content h3 {
@@ -158,7 +157,7 @@ body {
   height: 100%;
   background: #081b29;
   animation: showRight 1s ease forwards;
-  animation-delay: 1.25s;
+  animation-delay: 0.6s;
 }
 
 .home__content p {
@@ -176,7 +175,7 @@ body {
   height: 100%;
   background: #081b29;
   animation: showRight 1s ease forwards;
-  animation-delay: 1.6s;
+  animation-delay: 1s;
 }
 
 .home__content .home__talk-box {
@@ -196,7 +195,7 @@ body {
   height: 100%;
   background: #081b29;
   animation: showRight 1s ease forwards;
-  animation-delay: 2s;
+  animation-delay: 1.4s;
   z-index: 2;
 }
 
@@ -316,6 +315,7 @@ body {
   margin-left: 100px;
   margin-right: auto;
   margin-top: 70px;
+  border-radius: 8%;
 }
 
 .home__capa img {
@@ -364,7 +364,8 @@ body {
 .about__title {
   font-size: 4rem;
   margin-bottom: 20px;
-  margin-right: 95rem;
+  margin-right: auto;
+  margin-left: 3rem;
 }
 
 span {
@@ -467,6 +468,34 @@ span {
   color: #00abf0;
 }
 
+.portfolio__more {
+  display: inline-block;
+  width: 15rem;
+  margin-right: auto;
+  margin-left: 4rem;
+}
+
+.portfolio__more a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100%;
+  background: #00abf0;
+  border: 2px solid #00abf0;
+  border-radius: 8px;
+  font-size: 21px;
+  color: #081b29;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 10px;
+}
+
 .skills h2 {
   font-size: 4rem;
   margin-bottom: 20px;
@@ -485,15 +514,15 @@ span {
   list-style: none;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; /* Quebra para a próxima linha quando não há espaço suficiente */
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  margin-top: 7.5rem;
-  margin-bottom: 7.5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .skills__list li {
-  margin: 50px;
+  margin: 25px;
 }
 
 .skills__list img {
@@ -523,8 +552,8 @@ span {
 
 .experience__right {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Duas colunas */
-  gap: 20px; /* Espaçamento entre as caixas */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
 .experience__box {
@@ -573,6 +602,34 @@ span {
   color: #00abf0;
 }
 
+.experience__more {
+  display: inline-block;
+  width: 15rem;
+  margin-right: auto;
+  margin-top: auto;
+}
+
+.experience__more a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100%;
+  background: #00abf0;
+  border: 2px solid #00abf0;
+  border-radius: 8px;
+  font-size: 21px;
+  color: #081b29;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 10px;
+}
+
 .education__padded-boxes {
   display: flex;
   flex-wrap: wrap;
@@ -592,7 +649,7 @@ span {
   background-color: #00abf0;
   margin: 0;
   padding: 1rem;
-  font-size: 2.2rem; /* Ajustado para corresponder à estrutura HTML */
+  font-size: 2rem;
   border-top-left-radius: 0.4rem;
   border-top-right-radius: 0.4rem;
 }
@@ -635,7 +692,7 @@ span {
   font-size: 4rem;
   margin-bottom: 20px;
   text-align: left;
-  margin-left: 3.8rem; /* Ajuste conforme necessário */
+  margin-left: 3.8rem;
   color: #00abf0;
 }
 
@@ -669,7 +726,7 @@ span {
 .contact {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: 500px 600px 500px;
+  grid-template-columns: 500px 300px 500px;
   grid-template-areas:
     "header header ......."
     "sidebar ....... content"
@@ -810,6 +867,54 @@ span {
   outline: none;
   background: #081b29;
 }
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
 
 .contact__social {
   width: 100%;
