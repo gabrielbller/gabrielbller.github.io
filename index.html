@@ -1,676 +1,243 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gabriel's Portfolio</title>
+    <title>BarberShop™</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
   </head>
   <body>
-    <header class="header">
-      <a href="#" class="header__logo">GabrieL.</a>
-
-      <div id="mySidepanel" class="header__sidepanel">
-        <a
-          href="javascript:void(0)"
-          class="header__closebtn"
-          onclick="closeNav()"
-          >&times;</a
-        >
-        <a href="#home"><i class="bx bxs-home"></i> Home</a>
-        <a href="#about"><i class="bx bxs-user"></i> About</a>
-        <a href="#portfolio"><i class="bx bxs-briefcase"></i> Portfolio</a>
-        <a href="#skills"><i class="bx bx-code-alt"></i> Skills</a>
-        <a href="#experience"><i class="bx bxs-brain"></i> Experience</a>
-        <a href="#education"><i class="bx bxs-graduation"></i> Education</a>
-        <a href="#contact"><i class="bx bxs-envelope"></i> Contact</a>
+    <div class="modal-overlay"></div>
+    <div class="sidebar">
+      <div class="logo-details">
+        <div class="logo_name">BarberShop™</div>
+        <i class="bx bx-menu" id="btn"></i>
       </div>
-
-      <button class="header__openbtn" onclick="openNav()">&#9776; Menu</button>
-    </header>
-
-    <section class="home" id="home">
-      <div class="home__content">
-        <h1>Hi, I'm Gabriel Bodenmüller</h1>
-        <h3>Student Full Stack</h3>
-        <p>
-          I'm a Brazilian based web designer & front-end developer focused on
-          crafting clean & user-friendly experiences, I am passionate about
-          building excellent software that improves the lives of those around
-          me.
-        </p>
-        <div class="home__talk-box">
-          <a href="#">Hire me</a>
-          <a href="#">Let's Talk</a>
-        </div>
-      </div>
-      <div class="home__social">
-        <a href="https://github.com/gabrielbller " target="_blank"
-          ><i class="bx bxl-github"></i
-        ></a>
-        <a href="https://twitter.com/gabrielbller" target="_blank"
-          ><i class="bx bxl-twitter"></i
-        ></a>
-        <a href="https://www.linkedin.com/in/gabrielbller/" target="_blank"
-          ><i class="bx bxl-linkedin"></i
-        ></a>
-      </div>
-      <div class="home__capa">
-        <img src="images/fotocapa.jpg" alt="Profile Picture" width="500" />
-      </div>
-    </section>
-
-    <section class="about" id="about">
-      <h2 class="about__title">| About <span>Me</span></h2>
-      <div class="about__container">
-        <div class="about__content">
-          <h3>Name:</h3>
-          <p>GABRIEL BODENMÜLLER</p>
-          <h3>Age:</h3>
-          <p>21 YEARS</p>
-          <h3>Profession:</h3>
-          <p>FULLSTACK DEVELOPER</p>
-          <h3>Nationality:</h3>
-          <p>BRAZILIAN</p>
-          <div class="year"></div>
-          <h3>Github:</h3>
-          <p>WWW.GITHUB.COM/GABRIELBLLER</p>
-          <div class="about__cv">
-            <a
-              href="https://drive.google.com/file/d/1IKXfYsowCm6W0_rjYUWFaufuW27pX_6K/view?usp=sharing"
-              target="_blank"
-              class="btn"
-              >Download CV</a
-            >
-          </div>
-        </div>
-        <div class="about__image">
-          <img src="images/ragnar-sobre.jpg" alt="Profile Picture" />
-        </div>
-      </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section class="portfolio" id="portfolio">
-      <h2>| Portfolio</h2>
-
-      <div class="portfolio__row">
-        <div class="portfolio__column">
-          <div class="portfolio__card">
-            <img
-              src="images/portfolio-website-1.jpg"
-              alt=""
-              style="width: 80%"
-            />
-            <div class="portfolio__container">
-              <p><button class="portfolio__button">MEDINA</button></p>
+      <ul class="nav-list">
+        <li>
+          <i class="bx bx-search"></i>
+          <input type="text" placeholder="Search..." />
+          <span class="tooltip">Search</span>
+        </li>
+        <li class="dropdown">
+          <a href="#">
+            <i class="bx bxs-calendar"></i>
+            <span class="links_name">Schedule</span>
+            <i class="bx bx-chevron-down icon-toggle"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">List</a></li>
+            <li><a href="#">Create</a></li>
+            <li><a href="#">Report</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">
+            <i class="bx bxs-dish"></i>
+            <span class="links_name">Orders</span>
+            <i class="bx bx-chevron-down icon-toggle"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">List</a></li>
+            <li><a href="#">Create </a></li>
+            <li><a href="#">Report</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">
+            <i class="bx bxs-user"></i>
+            <span class="links_name">Customers</span>
+            <i class="bx bx-chevron-down icon-toggle"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">List</a></li>
+            <li><a href="#">Create </a></li>
+            <li><a href="#">Report</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">
+            <i class="bx bxs-briefcase"></i>
+            <span class="links_name">Employees</span>
+            <i class="bx bx-chevron-down icon-toggle"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">List</a></li>
+            <li><a href="#">Create </a></li>
+            <li><a href="#">Report</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">
+            <i class="bx bx-task"></i>
+            <span class="links_name">Services</span>
+            <i class="bx bx-chevron-down icon-toggle"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">List</a></li>
+            <li><a href="#">Create </a></li>
+            <li><a href="#">Report</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">
+            <i class="bx bx-paperclip"></i>
+            <span class="links_name">Products</span>
+            <i class="bx bx-chevron-down icon-toggle"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">List</a></li>
+            <li><a href="#">Create </a></li>
+            <li><a href="#">Report</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">
+            <i class="bx bx-package"></i>
+            <span class="links_name">Suppliers</span>
+            <i class="bx bx-chevron-down icon-toggle"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">List</a></li>
+            <li><a href="#">Create </a></li>
+            <li><a href="#">Report</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-cog"></i>
+            <span class="links_name">Setting</span>
+          </a>
+          <span class="tooltip">Setting</span>
+        </li>
+        <li class="profile">
+          <div class="profile-details">
+            <img src="images/perfil.jpeg" alt="profileImg" />
+            <div class="name_job">
+              <div class="name">GabrieL</div>
+              <div class="job">Owner</div>
             </div>
           </div>
-        </div>
-
-        <div class="portfolio__column">
-          <div class="portfolio__card">
-            <img
-              src="images/portfolio-website-2.jpg"
-              alt=""
-              style="width: 80%"
-            />
-            <div class="portfolio__container">
-              <p><button class="portfolio__button">LACAFE</button></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio__column">
-          <div class="portfolio__card">
-            <img
-              src="images/portfolio-website-3.jpg"
-              alt=""
-              style="width: 80%"
-            />
-            <div class="portfolio__container">
-              <p><button class="portfolio__button">DENTICARE</button></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio__column">
-          <div class="portfolio__card">
-            <img
-              src="images/portfolio-website-4.jpg"
-              alt=""
-              style="width: 80%"
-            />
-            <div class="portfolio__container">
-              <p><button class="portfolio__button">ATHLETE</button></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio__column">
-          <div class="portfolio__card">
-            <img
-              src="images/portfolio-website-7.jpg"
-              alt=""
-              style="width: 80%"
-            />
-            <div class="portfolio__container">
-              <p><button class="portfolio__button">TATTOO</button></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio__column">
-          <div class="portfolio__card">
-            <img
-              src="images/portfolio-website-6.jpg"
-              alt=""
-              style="width: 80%"
-            />
-            <div class="portfolio__container">
-              <p><button class="portfolio__button">PROWESS</button></p>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio__more">
-          <a
-            href="https://drive.google.com/file/d/1IKXfYsowCm6W0_rjYUWFaufuW27pX_6K/view?usp=sharing"
-            target="_blank"
-            class="btn"
-            >More</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <section class="skills" id="skills">
-      <h2>| Skills</h2>
-      <ul class="skills__list">
-        <li>
-          <figure>
-            <figcaption>HTML</figcaption>
-            <img src="images/html.png" alt="Imagem 1" class="color-change" />
-            <figcaption>
-              <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <figcaption>CSS</figcaption>
-            <img src="images/css.png" alt="Imagem 2" class="color-change" />
-            <figcaption>
-              <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <figcaption>C#</figcaption>
-            <img src="images/csharp.png" alt="Imagem 3" class="color-change" />
-            <figcaption>
-              <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <figcaption>JavaScript</figcaption>
-            <img
-              src="images/javascript.png"
-              alt="Imagem 4"
-              class="color-change"
-            />
-            <figcaption>
-              <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <figcaption>.NET Core</figcaption>
-            <img src="images/netcore.png" alt="Imagem 6" class="color-change" />
-            <figcaption>
-              <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i
-                class="fa-solid fa-star-half fa-2xs"
-                style="color: #ffff00"
-              ></i>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <figcaption>TypeScript</figcaption>
-            <img src="images/ts.png" alt="Imagem 7" class="color-change" />
-            <figcaption>
-              <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i
-                class="fa-solid fa-star-half fa-2xs"
-                style="color: #ffff00"
-              ></i>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <figcaption>React</figcaption>
-            <img src="images/react.png" alt="Imagem 8" class="color-change" />
-            <figcaption>
-              <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i
-                class="fa-solid fa-star-half fa-2xs"
-                style="color: #ffff00"
-              ></i>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <figcaption>Visual Studio Code</figcaption>
-            <img src="images/vscode.png" alt="Imagem 9" class="color-change" />
-            <figcaption>
-              <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i
-                class="fa-solid fa-star-half fa-2xs"
-                style="color: #ffff00"
-              ></i>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <figcaption>Git</figcaption>
-            <img src="images/git.png" alt="Imagem 10" class="color-change" />
-            <figcaption>
-              <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i
-                class="fa-solid fa-star-half fa-2xs"
-                style="color: #ffff00"
-              ></i>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <figcaption>PostgreSQL</figcaption>
-            <img
-              src="images/postgresql.png"
-              alt="Imagem 11"
-              class="color-change"
-            />
-            <figcaption>
-              <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <figcaption>Webpack</figcaption>
-            <img
-              src="images/webpack.png"
-              alt="Imagem 12"
-              class="color-change"
-            />
-            <figcaption>
-              <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <figcaption>Nginx</figcaption>
-            <img src="images/nginx.png" alt="Imagem 13" class="color-change" />
-            <figcaption>
-              <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <figcaption>Ubuntu</figcaption>
-            <img src="images/ubuntu.png" alt="Imagem 14" class="color-change" />
-            <figcaption>
-              <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <figcaption>AWS</figcaption>
-            <img src="images/aws.png" alt="Imagem 15" class="color-change" />
-            <figcaption>
-              <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <figcaption>Photoshop</figcaption>
-            <img
-              src="images/photoshop.png"
-              alt="Imagem 16"
-              class="color-change"
-            />
-            <figcaption>
-              <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <figcaption>Figma</figcaption>
-            <img src="images/figma.png" alt="Imagem 17" class="color-change" />
-            <figcaption>
-              <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i>
-            </figcaption>
-          </figure>
+          <i class="bx bx-log-out" id="log_out"></i>
         </li>
       </ul>
-    </section>
-
-    <section class="experience" id="experience">
-      <h2 class="experience__title">| Experience</h2>
-      <div class="experience__container">
-        <div class="experience__content">
-          <div class="year"><i class="bx bxs-calendar"></i> 2012 - 2014</div>
-          <h3>Google</h3>
-          <p>
-            Estágio na Google atuando na equipe de desenvolvimento de
-            ferramentas para o ADS.
-          </p>
-          <div class="year"><i class="bx bxs-calendar"></i> 2014 - 2018</div>
-          <h3>Booking</h3>
-          <p>
-            Cargo de desenvolvedor junior na equipe de desenvolvimento back end.
-          </p>
-          <div class="year"><i class="bx bxs-calendar"></i> 2018 - 2021</div>
-          <h3>Facebook</h3>
-          <p>
-            Cargo de desenvolvedor pleno na equipe de criação da biblioteca
-            React.
-          </p>
-          <div class="year">
-            <i class="bx bxs-calendar"></i> 2021 - Still Working
-          </div>
-          <h3>Twitter</h3>
-          <p>
-            Cargo de desenvolvedor sênior na equipe de criação do aplicativo X.
-          </p>
-          <div class="experience__more">
-            <a
-              href="https://drive.google.com/file/d/1IKXfYsowCm6W0_rjYUWFaufuW27pX_6K/view?usp=sharing"
-              target="_blank"
-              class="btn"
-              >More</a
-            >
-          </div>
-        </div>
-
-        <div class="experience__right">
-          <div class="experience__box">
-            <h3>9</h3>
-            <p>Years of experience</p>
-          </div>
-          <div class="experience__box">
-            <h3>16</h3>
-            <p>Individual Projects</p>
-          </div>
-          <div class="experience__box">
-            <h3>72</h3>
-            <p>Team Projects</p>
-          </div>
-          <div class="experience__box">
-            <h3>87</h3>
-            <p>Specialization Courses</p>
-          </div>
-        </div>
+    </div>
+    <section class="home-section">
+      <h1>Services</h1>
+      <div class="search-bar">
+        <input type="text" placeholder="Search Services" />
+        <i class="bx bx-search"></i>
       </div>
-    </section>
-
-    <!-- Education Section -->
-    <section class="education" id="education">
-      <h2 class="education__title">| Education</h2>
-      <div class="education__padded-boxes">
-        <section>
-          <h3 class="education__heading">Bachelor and Postgraduate</h3>
-          <div class="education__padded">
-            <div class="year"><i class="bx bxs-calendar"></i> 2012 - 2016</div>
-            <h3>Computer Cience</h3>
-            <p>Bachelor of Computer Science.</p>
-            <div class="year"><i class="bx bxs-calendar"></i> 2012 - 2016</div>
-            <h3>Big Data</h3>
-            <p>Postgraduate in Big Data by UFSC.</p>
-            <div class="year"><i class="bx bxs-calendar"></i> 2012 - 2016</div>
-            <h3>Applied computing</h3>
-            <p>Master's in Applied Computing by UFSC.</p>
-          </div>
-        </section>
-        <section>
-          <h3 class="education__heading">Specialization Courses</h3>
-          <div class="education__padded">
-            <div class="year"><i class="bx bxs-calendar"></i> 2019 - 2020</div>
-            <h3>FrontEnd</h3>
-            <p>
-              Front End course taught by Jackson Camara. Total of 500 hours
-              completed
-            </p>
-            <div class="year"><i class="bx bxs-calendar"></i> 2021 - 2022</div>
-            <h3>BackEnd</h3>
-            <p>
-              Front End course taught by Jackson Camara. Total of 500 hours
-              completed
-            </p>
-            <div class="year"><i class="bx bxs-calendar"></i> 2023 - Still</div>
-            <h3>FullStack</h3>
-            <p>
-              Front End course taught by Jackson Camara. Total of 500 hours
-              completed
-            </p>
-          </div>
-        </section>
-        <section>
-          <h3 class="education__heading">Specialization Courses</h3>
-          <div class="education__padded">
-            <div class="year"><i class="bx bxs-calendar"></i> 2017 - 2019</div>
-            <h3>English</h3>
-            <p>English Course at UNIVALI Idiomas. Levels a1, a2. b1.</p>
-            <div class="year"><i class="bx bxs-calendar"></i> 2020 - 2021</div>
-            <h3>English</h3>
-            <p>English Course at Wizard. Levels b2, c1.</p>
-            <div class="year"><i class="bx bxs-calendar"></i> 2021 - Still</div>
-            <h3>English</h3>
-            <p>Private English course. Levels c2.</p>
-          </div>
-        </section>
-        <div class="education__more">
-          <a
-            href="https://drive.google.com/file/d/1IKXfYsowCm6W0_rjYUWFaufuW27pX_6K/view?usp=sharing"
-            target="_blank"
-            class="btn"
-            >More</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-      <h2 class="contact__title">| Contact <span>Me!</span></h2>
-      <div class="contact__content">
-        <div class="contact__info">
-          <div class="contact__item">
-            <div class="icon-box">
-              <div class="icon-bg">
-                <i class="bx bx-envelope"></i>
-              </div>
-            </div>
-            <h3>
-              E-mail:<br />
-              gabrielbller@icloud.com
-            </h3>
-          </div>
-          <div class="contact__item">
-            <div class="icon-box">
-              <div class="icon-bg">
-                <i class="bx bx-phone"></i>
-              </div>
-            </div>
-            <h3>
-              Telefone:<br />
-              (47) 9 9247-4767
-            </h3>
-          </div>
-          <div class="contact__item">
-            <div class="icon-box">
-              <div class="icon-bg">
-                <i class="bx bxl-whatsapp"></i>
-              </div>
-            </div>
-            <h3>
-              WhatsApp:<br />
-              (47) 9 9247-4767
-            </h3>
-          </div>
-          <div class="contact__item">
-            <div class="icon-box">
-              <div class="icon-bg">
-                <i class="bx bxl-telegram"></i>
-              </div>
-            </div>
-            <h3>Telegram: <br />(47) 9 9247-4767</h3>
-          </div>
-          <div class="contact__item">
-            <div class="icon-box">
-              <div class="icon-bg">
-                <i class="bx bxl-skype"></i>
-              </div>
-            </div>
-            <h3>Skype: <br />gabrielbller</h3>
-          </div>
-        </div>
-      </div>
-
-      <div class="contact__form">
-        <form
-          action="https://formsubmit.co/gabrielbller@icloud.com"
-          method="POST"
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Category</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="product-row" data-toggle="modal" data-target="modal-1">
+            <td>Product 1</td>
+            <td>Description Product 1</td>
+            <td>Category A</td>
+            <td>$ 50.00</td>
+          </tr>
+          <tr class="product-row" data-toggle="modal" data-target="modal-1">
+            <td>Product 2</td>
+            <td>Description Product 2</td>
+            <td>Category B</td>
+            <td>$ 35.00</td>
+          </tr>
+          <tr class="product-row" data-toggle="modal" data-target="modal-1">
+            <td>Product 3</td>
+            <td>Description Product 3</td>
+            <td>Category C</td>
+            <td>$ 70.00</td>
+          </tr>
+          <tr class="product-row" data-toggle="modal" data-target="modal-1">
+            <td>Product 4</td>
+            <td>Description Product 4</td>
+            <td>Category A</td>
+            <td>$ 70.00</td>
+          </tr>
+          <tr class="product-row" data-toggle="modal" data-target="modal-1">
+            <td>Product 5</td>
+            <td>Description Product 5</td>
+            <td>Category B</td>
+            <td>$ 70.00</td>
+          </tr>
+          <tr class="product-row" data-toggle="modal" data-target="modal-1">
+            <td>Product 6</td>
+            <td>Description Product 6</td>
+            <td>Category C</td>
+            <td>$ 70.00</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="pagination">
+        <span class="arrow-box double-left"
+          ><span class="arrow">&lt;&lt;</span></span
         >
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" placeholder="Name" />
-          <label for="email">E-mail</label>
-          <input type="email" name="e-mail" id="email" placeholder="E-mail" />
-          <label for="message">Message</label>
-          <textarea
-            name="message"
-            id="message"
-            placeholder="Write in here"
-            required
-          ></textarea>
-          <input
-            type="hidden"
-            name="_next"
-            value="http://127.0.0.1:5501/obrigado.html"
-          />
-          <button type="submit" id="myBtn">Send</button>
-          <input type="hidden" name="_captcha" value="false" />
-          <div id="myModal" class="modal">
-            <div class="modal-content">
-              <span class="close">&times;</span>
-              <p>Obrigado! Recebido a mensagem com sucesso.</p>
-            </div>
-          </div>
-        </form>
+        <span class="arrow-box left"><span class="arrow">&lt;</span></span>
+        <span class="page-box"><span class="page">1</span></span>
+        <span class="page-box"><span class="page">2</span></span>
+        <span class="page-box"><span class="page">3</span></span>
+        <span class="page-box"><span class="page">4</span></span>
+        <span class="page-box"><span class="page">5</span></span>
+        <span class="arrow-box right"><span class="arrow">&gt;</span></span>
+        <span class="arrow-box double-right"
+          ><span class="arrow">&gt;&gt;</span></span
+        >
       </div>
-
-      <div class="contact__social">
-        <a href="https://www.linkedin.com/in/gabrielbller/" target="_blank"
-          ><i class="bx bxl-linkedin"></i
-        ></a>
-        <a href="https://twitter.com/gabrielbller" target="_blank"
-          ><i class="bx bxl-twitter"></i
-        ></a>
-        <a href="https://www.instagram.com/gabrielbller/" target="_blank"
-          ><i class="bx bxl-instagram"></i
-        ></a>
-        <a
-          href="https://www.youtube.com/channel/UCkufdOH6Dj9Uk8cYGv9dUsA"
-          target="_blank"
-          ><i class="bx bxl-youtube"></i
-        ></a>
-        <a href="https://www.facebook.com/gabrielbller" target="_blank"
-          ><i class="bx bxl-facebook"></i
-        ></a>
+      <!-- Modais -->
+      <div id="modal-1" class="modal">
+        <div class="modal-content">
+          <span class="close" data-dismiss="modal">&times;</span>
+          <h2>Edit Service</h2>
+          <form>
+            <ul class="modal-list">
+              <li>
+                <label for="edit-name">Name:</label>
+                <input type="text" id="edit-name" name="name" />
+              </li>
+              <li>
+                <label for="edit-price">Price:</label>
+                <input type="text" id="edit-price" name="price" />
+              </li>
+              <li>
+                <label for="edit-description">Description:</label>
+                <textarea id="edit-description"></textarea>
+              </li>
+              <li>
+                <label for="edit-category">Category:</label>
+                <input type="text" id="edit-category" name="category" />
+              </li>
+              <li>
+                <label for="edit-duration">Duration:</label>
+                <input type="text" id="edit-duration" name="duration" />
+              </li>
+              <li class="modal-checkbox">
+                <label for="inactive">Inactive</label>
+                <input type="checkbox" id="inactive" name="inactive" />
+              </li>
+            </ul>
+            <div class="modal-buttons">
+              <button type="button" class="save-button">Save</button>
+              <button type="button" class="cancel-button" data-dismiss="modal">
+                Return
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
-
-    <!-- Rodape Section -->
-
-    <footer class="footer">
-      <div class="footer__text">
-        <p>Copyright &copy; 2023 by GabrieL | All Rights Reserved.</p>
-      </div>
-      <div class="footer__iconTop">
-        <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
-      </div>
-    </footer>
 
     <script src="script.js"></script>
   </body>
 </html>
-
-<!-- <div class="header__navbar-menu" id="menu-icon"></div>
-
-      <nav class="header__navbar">
-        <a href="#home" class="header__active"><i class="bx bxs-home"></i></a>
-        <a href="#about"><i class="bx bxs-user"></i></a>
-        <a href="#portfolio"><i class="bx bxs-briefcase"></i></a>
-        <a href="#skills"><i class="bx bx-code-alt"></i></a>
-        <a href="#experience"><i class="bx bxs-brain"></i></a>
-        <a href="#education"><i class="bx bxs-graduation"></i></a>
-        <a href="#contact"><i class="bx bxs-envelope"></i></a>
-
-        <a href="#menu" onclick="myFunction(this)"
-          ><i class="bx bx-menu"></i
-        ></a>
-      </nav> -->
