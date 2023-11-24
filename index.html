@@ -83,15 +83,24 @@
       <ul>
         <li class="about__titulo">NAME</li>
         <li>GABRIEL BODENMÜLLER</li>
+      </ul>
+      <ul>
         <li class="about__titulo">AGE</li>
         <li>21 YEARS</li>
+      </ul>
+      <ul>
         <li class="about__titulo">PROFESSION</li>
         <li>FULLSTACK DEVELOPER</li>
+      </ul>
+      <ul>
         <li class="about__titulo">NATIONALITY</li>
         <li>BRAZILIAN</li>
+      </ul>
+      <ul>
         <li class="about__titulo">GITHUB</li>
         <li>
-          <a href="https://github.com/gabrielbller" target="_blank">WWW.GITHUB.COM/GABRIELBLLER</a>
+          <a class="about__titulo-link" href="https://github.com/gabrielbller"
+            target="_blank">WWW.GITHUB.COM/GABRIELBLLER</a>
         </li>
       </ul>
       <div class="about__cv">
@@ -109,9 +118,9 @@
     <div class="portfolio__header">
       <h2 class="portfolio__title">| Portfolio</h2>
       <div class="portfolio__buttons">
-        <button id="viewWebsites">Websites</button>
-        <button id="changeTheme"><i class="bx bxs-palette"></i></button>
-        <button id="camera"><i class="bx bxs-camera"></i></button>
+        <button class="portfolio__buttons_style" id="viewWebsites">Websites</button>
+        <button class="portfolio__buttons_style" id="changeTheme"><i class="bx bxs-palette"></i></button>
+        <button class="portfolio__buttons_style" id="camera"><i class="bx bxs-camera"></i></button>
       </div>
     </div>
     <div class="portfolio__images">
@@ -472,113 +481,86 @@
   </section>
 
   <!-- Contact Section -->
-  <section class="contact" id="contact">
-    <h2 class="contact__title">| Contact <span>Me!</span></h2>
-    <div class="contact__content">
-      <div class="contact__info">
-        <ul class="contact__list">
-          <li class="contact__item">
-            <div class="icon-box">
-              <div class="icon-bg">
-                <i class="bx bx-envelope"></i>
-              </div>
+  <section class="contato secao" id="contato">
+    <div class="contato__container">
+      <h2 class="contato__titulo titulo">| Contact <span>Me!</span></h2>
+      <div class="contato__conteudo">
+        <ul class="contato__lista">
+          <li class="lista__item">
+            <div class="item__icone">
+              <i class="fa-regular fa-envelope"></i>
             </div>
-            <h3>Email:</h3>
-            <p>gabrielbller@icloud.com</p>
+            <div class="item__conteudo">
+              <p class="item__titulo">EMAIL</p>
+              <p class="item__descricao">gabrielbller@icloud.com</p>
+            </div>
           </li>
-          <li class="contact__item">
-            <div class="icon-box">
-              <div class="icon-bg">
-                <i class="bx bx-phone"></i>
-              </div>
+          <li class="lista__item">
+            <div class="item__icone">
+              <i class="fa-solid fa-phone"></i>
             </div>
-            <h3>Telefone:</h3>
-            <p>(47) 9 9247-4767</p>
+            <div class="item__conteudo">
+              <p class="item__titulo">TELEFONE</p>
+              <p class="item__descricao">(47) 9 9247-4767</p>
+            </div>
           </li>
-          <li class="contact__item">
-            <div class="icon-box">
-              <div class="icon-bg">
-                <i class="bx bxl-whatsapp"></i>
-              </div>
+          <li class="lista__item">
+            <a href="https://wa.me/5547992474767" class="item__icone">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <div class="item__conteudo">
+              <p class="item__titulo">WHATSAPP</p>
+              <p class="item__descricao">(47) 9 9247-4767</p>
             </div>
-            <h3>WhatsApp:</h3>
-            <p>(47) 9 9247-4767</p>
           </li>
-          <li class="contact__item">
-            <div class="icon-box">
-              <div class="icon-bg">
-                <i class="bx bxl-telegram"></i>
-              </div>
+          <li class="lista__item">
+            <div class="item__icone">
+              <i class="fa-brands fa-discord"></i>
             </div>
-            <h3>Telegram:</h3>
-            <p>(47) 9 9247-4767</p>
-          </li>
-          <li class="contact__item">
-            <div class="icon-box">
-              <div class="icon-bg">
-                <i class="bx bxl-skype"></i>
-              </div>
+            <div class="item__conteudo">
+              <p class="item__titulo">DISCORD</p>
+              <p class="item__descricao">gabrielbller</p>
             </div>
-            <h3>Skype:</h3>
-            <p>gabrielbller</p>
           </li>
         </ul>
-      </div>
-      <div class="contact__form">
-        <form action="https://formsubmit.co/gabrielbller@icloud.com" method="POST">
-          <label for="name">Name:</label>
-          <input type="text" name="name" id="name" placeholder="Name" required />
+        <form class="contato__formulario" action="https://formsubmit.co/gabrielbller@icloud.com" method="POST"
+          data-form>
+          <div class="snackbar">
+            <p class="snackbar-message" id="snackbar-message">Teste</p>
+          </div>
+          <input type="text" name="nome" id="" placeholder="NOME" class="contato__input" required />
 
-          <label for="email">Email:</label>
-          <input type="email" name="email" id="email" placeholder="Email" required />
+          <input type="text" name="email" id="" placeholder="EMAIL" class="contato__input" required />
 
-          <label for="message">Message:</label>
-          <textarea name="message" id="message" placeholder="Write here" required></textarea>
+          <input type="text" name="telefone" id="" placeholder="TELEFONE" class="contato__input" required />
 
-          <button type="submit" id="myBtn">Send</button>
-          <input type="hidden" name="_captcha" value="false" />
+          <input type="text" name="assunto" id="" placeholder="ASSUNTO" class="contato__input" required />
+
+          <textarea name="message" id="" cols="30" rows="10" placeholder="MENSAGEM" class="contato__input"
+            required></textarea>
+
+
+          <button type="submit" class="contato__botao botao-principal--cor--principal botao" data-button>
+            ENVIAR</button>
         </form>
       </div>
-    </div>
+      <div class="contato__botoes">
+        <navbar class="contato__redes-sociais">
+          <a href="https://github.com/gabrielbller" class="contato__rede">
+            <span class="fa-stack fa-2x">
+              <i class="fa-solid fa-square fa-stack-2x icone__fundo"></i>
+              <i class="fab fa-github fa-stack-1x fa-inverse icone__marca"></i>
+            </span>
+          </a>
 
-    <div class="contact__social">
-      <ul class="contact__social-list">
-        <li class="contact__social-item">
-          <a href="https://www.linkedin.com/in/gabrielbller/" target="_blank" aria-label="LinkedIn">
-            <div class="social__icon">
-              <i class="bx bxl-linkedin"></i>
-            </div>
+          <a href="https://br.linkedin.com/in/gabrielbller" class="contato__rede">
+            <span class="fa-stack fa-2x">
+              <i class="fa-solid fa-square fa-stack-2x icone__fundo"></i>
+              <i class="fab fa-linkedin fa-stack-1x fa-inverse icone__marca"></i>
+            </span>
           </a>
-        </li>
-        <li class="contact__social-item">
-          <a href="https://twitter.com/gabrielbller" target="_blank" aria-label="Twitter">
-            <div class="social__icon">
-              <i class="bx bxl-twitter"></i>
-            </div>
-          </a>
-        </li>
-        <li class="contact__social-item">
-          <a href="https://www.instagram.com/gabrielbller/" target="_blank" aria-label="Instagram">
-            <div class="social__icon">
-              <i class="bx bxl-instagram"></i>
-            </div>
-          </a>
-        </li>
-        <li class="contact__social-item">
-          <a href="https://www.youtube.com/channel/UCkufdOH6Dj9Uk8cYGv9dUsA" target="_blank" aria-label="YouTube">
-            <div class="social__icon">
-              <i class="bx bxl-youtube"></i>
-            </div>
-          </a>
-        </li>
-        <li class="contact__social-item">
-          <a href="https://www.facebook.com/gabrielbller" target="_blank" aria-label="Facebook">
-            <div class="social__icon">
-              <i class="bx bxl-facebook"></i>
-            </div>
-          </a>
-        </li>
-      </ul>
+        </navbar>
+      </div>
     </div>
   </section>
 

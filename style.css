@@ -260,6 +260,7 @@ span {
 .about__content ul {
   list-style: none;
   padding: 0 0 0 6vw;
+  margin-bottom: 2vw;
 }
 
 .about__content li {
@@ -269,6 +270,10 @@ span {
 
 .about__titulo {
   color: #00abf0;
+}
+
+.about__titulo-link {
+  color: white;
 }
 
 .about__image {
@@ -293,7 +298,7 @@ span {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 10vw;
+  width: 12vw;
   height: 100%;
   background: #00abf0;
   border: 2px solid #00abf0;
@@ -336,6 +341,15 @@ span {
   display: flex;
 }
 
+.portfolio__buttons_style {
+  background-color: #00abf0;
+  border: none;
+  border-radius: 0.5vw;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  padding: 1vw 2vw;
+}
+
 .portfolio__buttons button {
   background-color: #081b29;
   color: white;
@@ -359,7 +373,8 @@ span {
 }
 
 .portfolio__images {
-  margin-left: 3vw;
+  margin-top: 2vw;
+  margin-left: 8vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0.52vw;
@@ -393,11 +408,12 @@ span {
   background-color: #007bff;
   color: white;
   border: none;
+  border-radius: 0.5vw;
+  font-size: 1vw;
 
-  /* Adicionado estilos de hover e active */
   transition: background-color 0.3s ease;
   cursor: pointer;
-  padding: 0.52vw 0.41vw;
+  padding: 1vw 2vw;
 }
 
 #loadMore:hover {
@@ -430,7 +446,7 @@ span {
 }
 
 .skills__list img {
-  max-width: 5vw;
+  max-width: 6vw;
   height: auto;
 }
 
@@ -441,6 +457,7 @@ span {
 
 .skills__list figure:hover {
   filter: grayscale(0%);
+  transform: scale(1.2);
 }
 
 .skills h2 {
@@ -486,21 +503,22 @@ span {
 }
 
 .year {
-  font-size: 1vw;
+  font-size: 2vw;
   color: #00abf0;
 }
 
 h3 {
-  font-size: 2vw;
-  font-weight: 700;
+  font-size: 10vw;
+  font-weight: 1000;
 }
 
 p {
-  font-size: 1vw;
+  font-size: 1.2vw;
   margin: 1.04vw 0;
 }
 
 .experience__right {
+  margin-top: 3vw;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2vw;
@@ -663,56 +681,6 @@ p {
   background-color: #007b9d;
 }
 
-/* Contact Section */
-.contact {
-  background-color: #081b29;
-  padding: 2.6vw;
-  text-align: center;
-}
-
-.contact__title {
-  font-size: 3.33vw;
-  margin-bottom: 1.04vw;
-  text-align: left;
-  padding: 0 0 0 5vw;
-  color: white; /* Cor do título */
-}
-
-.contact__content {
-  display: flex;
-  flex-wrap: wrap; /* Para envolver os elementos em telas menores */
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1.04vw;
-  margin-top: 1.5625vw;
-}
-
-/* Estilos da seção de informações de contato */
-.contact__info {
-  flex: 1;
-  text-align: left;
-  padding: 1.041vw;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease-in-out;
-}
-
-.contact__info:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-
-.contact__list {
-  list-style: none;
-  padding: 0;
-}
-
-.contact__item {
-  display: flex;
-  align-items: center; /* Alinhe verticalmente ícone, imagem e título */
-  margin-bottom: 1.041vw;
-  font-size: 0.75vw; /* Reduza o tamanho da fonte das informações */
-}
-
 .icon-box {
   display: inline-block;
   background-color: #007bff;
@@ -723,122 +691,152 @@ p {
   margin-right: 0.52;
 }
 
-.contact__icon {
-  width: 1.5625vw; /* Tamanho da imagem */
-  height: 1.5625vw;
-  margin-right: 0.52;
-}
-
-.contact__text {
-  flex: 1;
-}
-
 h3 {
   font-size: 0.833vw; /* Reduza o tamanho do título */
   margin-bottom: 5px;
 }
 
-/* Estilos do formulário de contato */
-.contact__form {
-  flex: 1;
-  text-align: left;
-  padding: 1.04vw;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
-  font-size: 1.1rem; /* Aumente o tamanho da fonte no formulário */
-}
-
-form {
-  max-width: 26.041vw; /* Aumente a largura máxima do formulário */
-  margin: 0 auto;
-}
-
-label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 10px; /* Aumente a margem inferior dos rótulos */
-  color: white; /* Cor do rótulo */
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  padding: 12px; /* Aumente o preenchimento */
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-button[type="submit"] {
-  background-color: #007bff;
-  color: white;
-  padding: 12px 20px; /* Aumente o preenchimento */
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
-}
-
-button[type="submit"]:hover {
-  background-color: #0056b3;
-  transform: scale(1.05);
-}
-
-/* Estilos da seção de redes sociais */
-.contact__social {
-  margin-top: 1.41vw;
-  text-align: center;
-}
-
-.contact__social-list {
-  list-style: none;
-  padding: 0;
+.contato {
   display: flex;
-  justify-content: center;
-}
-
-.contact__social-item {
-  margin-right: 1.041vw;
-}
-
-.contact__social-item:last-child {
-  margin-right: 0;
-}
-
-.contact__social-item a {
-  color: white;
-  font-size: 1.5rem;
-}
-
-/* Estilos para links em hiperlink */
-.contact__social-item a:hover {
-  text-decoration: none;
-  color: #081b29;
-  transform: rotate(360deg) scale(1.2); /* Adiciona escala na animação de rotação */
-}
-
-.social__icon {
-  width: 3.125vw; /* Tamanho do círculo que envolve o ícone */
-  height: 3.125vw;
-  background-color: #00abf0; /* Cor do círculo */
-  border-radius: 50%; /* Deixa o círculo circular */
-  display: flex;
-  justify-content: center;
   align-items: center;
-  transition: transform 0.3s ease; /* Adiciona uma transição de transformação */
 }
 
-.social__icon img {
-  width: 2.5vw; /* Tamanho do ícone dentro do círculo */
-  height: 2.5vw;
-  display: block;
+.contato__container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-/* Adicione uma animação de escala suave no hover */
-.social__icon:hover {
-  transform: scale(1.1); /* Aumenta o tamanho do círculo no hover */
+.contato__lista {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7%;
+  width: 50%;
+}
+
+.contato__conteudo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 80%;
+  margin-top: 5%;
+}
+
+.contato__formulario {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.contato__input {
+  padding: 1.5vh;
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  border: solid 1px #00abf0;
+  margin-bottom: 3%;
+}
+
+.contato__formulario textarea {
+  font-family: "Roboto", sans-serif;
+}
+
+.contato__mensagem {
+  height: 40%;
+}
+
+.contato__botoes {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contato__redes-sociais {
+  display: flex;
+  justify-content: space-between;
+  width: 8%;
+}
+
+.contato__rede {
+  color: #00abf0;
+  font-size: clamp(1rem, 1vh, 3rem);
+  border-radius: 50px;
+}
+
+.icone__fundo {
+  color: #00abf0;
+}
+
+.contato__rede:hover .icone__fundo {
+  color: #00abf0;
+}
+
+.contato__rede:hover .icone__marca {
+  color: #00abf0;
+}
+
+.disabled {
+  background-color: rgb(97, 97, 97);
+}
+
+.success {
+  background-color: rgb(32, 77, 32);
+}
+
+.error {
+  background-color: rgb(83, 13, 13);
+}
+
+.snackbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 3%;
+  font-size: clamp(2rem, 2vh, 3rem);
+  z-index: 10;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%);
+  text-align: center;
+  font-weight: bold;
+}
+
+.snackbar.success {
+  background-color: rgb(32, 77, 32);
+}
+
+.snackbar.error {
+  background-color: rgb(83, 13, 13);
+}
+
+.lista__item {
+  display: flex;
+}
+
+.item__icone {
+  padding: 1%;
+  border-radius: 5px;
+  background-color: var(--cor-destaque);
+  font-size: clamp(1vmin, 2.5vmin, 2.5vmin);
+  color: #111111;
+  margin-right: 1%;
+}
+
+.item__conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.item__titulo {
+  color: var(--secundaria);
+}
+
+.item__descricao {
+  font-weight: bold;
 }
 
 .footer {
