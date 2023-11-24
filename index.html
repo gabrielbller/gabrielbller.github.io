@@ -1,713 +1,599 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gabriel's Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-  </head>
-  <body>
-    <header class="header">
-      <a href="#" class="header__logo">GabrieL.</a>
 
-      <div class="header__navbar-menu" id="menu-icon"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gabriel's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
 
-      <nav class="header__navbar">
-        <a href="#home" class="header__active"><i class="bx bxs-home"></i></a>
-        <a href="#about"><i class="bx bxs-user"></i></a>
-        <a href="#portfolio"><i class="bx bxs-briefcase"></i></a>
-        <a href="#skills"><i class="bx bx-code-alt"></i></a>
-        <a href="#experience"><i class="bx bxs-brain"></i></a>
-        <a href="#education"><i class="bx bxs-graduation"></i></a>
-        <a href="#contact"><i class="bx bxs-envelope"></i></a>
-
-        <a href="#menu" onclick="myFunction(this)"
-          ><i class="bx bx-menu"></i
-        ></a>
+<body>
+  <div class="navbar-fixed">
+    <header class="menu-topo">
+      <a class="header__logo">GabrieL.</a>
+      <nav>
+        <ul class="cabecalho">
+          <li class="cabecalho__botao"><a href="#home" class="cabecalho__botao-clicavel"><i class="bx bxs-home"></i>
+              <p class="cabecalho__botao-texto">Home</p>
+            </a></li>
+          <li class="cabecalho__botao"><a href="#about" class="cabecalho__botao-clicavel"><i
+                class="fa-solid fa-user"></i>
+              <p class="cabecalho__botao-texto">About</p>
+            </a></li>
+          <li class="cabecalho__botao"> <a href="#portfolio" class="cabecalho__botao-clicavel"><i
+                class="fa-solid fa-suitcase"></i>
+              <p class="cabecalho__botao-texto">Portfolio</p>
+            </a></li>
+          <li class="cabecalho__botao"><a href="#skills" class="cabecalho__botao-clicavel"><i
+                class="fa-solid fa-brain"></i>
+              <p class="cabecalho__botao-texto">Skills</p>
+            </a></li>
+          <li class="cabecalho__botao"><a href="#experience" class="cabecalho__botao-clicavel"><i
+                class="fa-solid fa-user-tie"></i>
+              <p class="cabecalho__botao-texto">Experience</p>
+            </a></li>
+          <li class="cabecalho__botao"><a href="#education" class="cabecalho__botao-clicavel"><i
+                class="fa-solid fa-user-graduate"></i>
+              <p class="cabecalho__botao-texto">Education</p>
+            </a></li>
+          <li class="cabecalho__botao"><a href="#contact" class="cabecalho__botao-clicavel"><i
+                class="fa-solid fa-message"></i>
+              <p class="cabecalho__botao-texto">Contact</p>
+            </a></li>
+        </ul>
+        <div class="menu-topo__fundo"></div>
+        <div class="menu-barras">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </nav>
     </header>
+  </div>
 
-    <section class="home" id="home">
-      <div class="home__content">
-        <h1>Hi!</h1>
-        <h1>I'm Gabriel Bodenmüller</h1>
-        <h3>Student Full Stack</h3>
-        <p>
-          I'm a Brazilian-based web designer and front-end developer, dedicated
-          to creating clean, user-friendly experiences. I'm deeply passionate
-          about developing exceptional software that enhances the lives of those
-          in my community.
-        </p>
-        <div class="home__talk-box">
-          <a href="#">Let's Talk</a>
-        </div>
+  <section class="home" id="home">
+    <div class="home__content">
+      <h1>Hi!</h1>
+      <h1>I'm Gabriel Bodenmüller</h1>
+      <h3>Student Full Stack</h3>
+      <p>
+        I'm a Brazilian-based web designer and front-end developer, dedicated
+        to creating clean, user-friendly experiences. I'm deeply passionate
+        about developing exceptional software that enhances the lives of those
+        in my community.
+      </p>
+      <div class="home__talk-box">
+        <a href="#">Let's Talk</a>
       </div>
-      <div class="home__capa">
-        <img src="images/fotocapa.jpg" alt="Profile Picture" width="500" />
-      </div>
-      <div class="home__social">
-        <a href="https://github.com/gabrielbller " target="_blank"
-          ><i class="bx bxl-github"></i
-        ></a>
-        <a href="https://twitter.com/gabrielbller" target="_blank"
-          ><i class="bx bxl-twitter"></i
-        ></a>
-        <a href="https://www.linkedin.com/in/gabrielbller/" target="_blank"
-          ><i class="bx bxl-linkedin"></i
-        ></a>
-      </div>
-    </section>
+    </div>
+    <div class="home__capa">
+      <img src="images/fotocapa.jpg" alt="Profile Picture" width="500" />
+    </div>
+    <div class="home__social">
+      <a href="https://github.com/gabrielbller " target="_blank"><i class="bx bxl-github"></i></a>
+      <a href="https://twitter.com/gabrielbller" target="_blank"><i class="bx bxl-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/gabrielbller/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+    </div>
+  </section>
 
-    <section class="about" id="about">
-      <div class="about__content">
-        <h2 class="about__title">| About <span>Me</span></h2>
-        <ul>
-          <li class="about__titulo">NAME</li>
-          <li>GABRIEL BODENMÜLLER</li>
-          <li class="about__titulo">AGE</li>
-          <li>21 YEARS</li>
-          <li class="about__titulo">PROFESSION</li>
-          <li>FULLSTACK DEVELOPER</li>
-          <li class="about__titulo">NATIONALITY</li>
-          <li>BRAZILIAN</li>
-          <li class="about__titulo">GITHUB</li>
-          <li>
-            <a href="https://github.com/gabrielbller" target="_blank"
-              >WWW.GITHUB.COM/GABRIELBLLER</a
-            >
-          </li>
-        </ul>
-        <div class="about__cv">
-          <a
-            href="https://drive.google.com/file/d/1IKXfYsowCm6W0_rjYUWFaufuW27pX_6K/view?usp=sharing"
-            target="_blank"
-            class="btn"
-            >Download CV</a
-          >
-        </div>
-      </div>
-      <div class="about__image">
-        <img src="images/ragnar-sobre.jpg" alt="Profile Picture" />
-      </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section class="portfolio" id="portfolio">
-      <div class="portfolio__header">
-        <h2 class="portfolio__title">| Portfolio</h2>
-        <div class="portfolio__buttons">
-          <button id="viewWebsites">Websites</button>
-          <button id="changeTheme"><i class="bx bxs-palette"></i></button>
-          <button id="camera"><i class="bx bxs-camera"></i></button>
-        </div>
-      </div>
-      <div class="portfolio__images">
-        <a href="website1.html"
-          ><img src="images/portfolio-website-1.jpg" alt="Projeto 1"
-        /></a>
-        <a href="website2.html"
-          ><img src="images/portfolio-website-2.jpg" alt="Projeto 2"
-        /></a>
-        <a href="website3.html"
-          ><img src="images/portfolio-website-3.jpg" alt="Projeto 3"
-        /></a>
-        <a href="website4.html"
-          ><img src="images/portfolio-website-4.jpg" alt="Projeto 4"
-        /></a>
-        <a href="website5.html"
-          ><img src="images/portfolio-website-6.jpg" alt="Projeto 5"
-        /></a>
-        <a href="website6.html"
-          ><img src="images/portfolio-website-7.jpg" alt="Projeto 6"
-        /></a>
-        <a href="website7.html" class="hidden">
-          <img src="images/portfolio-website-1.jpg" alt="Projeto 7" />
-        </a>
-        <a href="website8.html" class="hidden">
-          <img src="images/portfolio-website-2.jpg" alt="Projeto 8" />
-        </a>
-        <a href="website9.html" class="hidden">
-          <img src="images/portfolio-website-3.jpg" alt="Projeto 8" />
-        </a>
-      </div>
-      <button id="loadMore">More</button>
-    </section>
-
-    <!-- SKills -->
-    <section class="skills" id="skills">
-      <h2>| Skills</h2>
-      <ul class="skills__list">
+  <section class="about" id="about">
+    <div class="about__content">
+      <h2 class="about__title">| About <span>Me</span></h2>
+      <ul>
+        <li class="about__titulo">NAME</li>
+        <li>GABRIEL BODENMÜLLER</li>
+        <li class="about__titulo">AGE</li>
+        <li>21 YEARS</li>
+        <li class="about__titulo">PROFESSION</li>
+        <li>FULLSTACK DEVELOPER</li>
+        <li class="about__titulo">NATIONALITY</li>
+        <li>BRAZILIAN</li>
+        <li class="about__titulo">GITHUB</li>
         <li>
-          <figure>
-            <figcaption>HTML</figcaption>
-            <img src="images/html.png" alt="Imagem 1" class="color-change" />
-            <figcaption>
-              <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <figcaption>CSS</figcaption>
-            <img src="images/css.png" alt="Imagem 2" class="color-change" />
-            <figcaption>
-              <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <figcaption>C#</figcaption>
-            <img src="images/csharp.png" alt="Imagem 3" class="color-change" />
-            <figcaption>
-              <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <figcaption>JavaScript</figcaption>
-            <img
-              src="images/javascript.png"
-              alt="Imagem 4"
-              class="color-change"
-            />
-            <figcaption>
-              <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <figcaption>.NET Core</figcaption>
-            <img src="images/netcore.png" alt="Imagem 6" class="color-change" />
-            <figcaption>
-              <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i
-                class="fa-solid fa-star-half fa-2xs"
-                style="color: #ffff00"
-              ></i>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <figcaption>TypeScript</figcaption>
-            <img src="images/ts.png" alt="Imagem 7" class="color-change" />
-            <figcaption>
-              <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i
-                class="fa-solid fa-star-half fa-2xs"
-                style="color: #ffff00"
-              ></i>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <figcaption>React</figcaption>
-            <img src="images/react.png" alt="Imagem 8" class="color-change" />
-            <figcaption>
-              <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i
-                class="fa-solid fa-star-half fa-2xs"
-                style="color: #ffff00"
-              ></i>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <figcaption>Visual Studio Code</figcaption>
-            <img src="images/vscode.png" alt="Imagem 9" class="color-change" />
-            <figcaption>
-              <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i
-                class="fa-solid fa-star-half fa-2xs"
-                style="color: #ffff00"
-              ></i>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <figcaption>Git</figcaption>
-            <img src="images/git.png" alt="Imagem 10" class="color-change" />
-            <figcaption>
-              <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i
-                class="fa-solid fa-star-half fa-2xs"
-                style="color: #ffff00"
-              ></i>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <figcaption>PostgreSQL</figcaption>
-            <img
-              src="images/postgresql.png"
-              alt="Imagem 11"
-              class="color-change"
-            />
-            <figcaption>
-              <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <figcaption>Webpack</figcaption>
-            <img
-              src="images/webpack.png"
-              alt="Imagem 12"
-              class="color-change"
-            />
-            <figcaption>
-              <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <figcaption>Nginx</figcaption>
-            <img src="images/nginx.png" alt="Imagem 13" class="color-change" />
-            <figcaption>
-              <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <figcaption>Ubuntu</figcaption>
-            <img src="images/ubuntu.png" alt="Imagem 14" class="color-change" />
-            <figcaption>
-              <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <figcaption>AWS</figcaption>
-            <img src="images/aws.png" alt="Imagem 15" class="color-change" />
-            <figcaption>
-              <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i
-              ><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <figcaption>Photoshop</figcaption>
-            <img
-              src="images/photoshop.png"
-              alt="Imagem 16"
-              class="color-change"
-            />
-            <figcaption>
-              <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <figcaption>Figma</figcaption>
-            <img src="images/figma.png" alt="Imagem 17" class="color-change" />
-            <figcaption>
-              <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i>
-            </figcaption>
-          </figure>
+          <a href="https://github.com/gabrielbller" target="_blank">WWW.GITHUB.COM/GABRIELBLLER</a>
         </li>
       </ul>
-    </section>
+      <div class="about__cv">
+        <a href="https://drive.google.com/file/d/1IKXfYsowCm6W0_rjYUWFaufuW27pX_6K/view?usp=sharing" target="_blank"
+          class="btn">Download CV</a>
+      </div>
+    </div>
+    <div class="about__image">
+      <img src="images/ragnar-sobre.jpg" alt="Profile Picture" />
+    </div>
+  </section>
 
-    <section class="experience" id="experience">
-      <h2 class="experience__title">| Experience</h2>
-      <div class="experience__container">
-        <ul class="experience__list">
-          <li class="experience__item">
-            <div class="year"><i class="bx bxs-calendar"></i> 2012 - 2014</div>
-            <h3>Google</h3>
-            <p>
-              Estágio na Google atuando na equipe de desenvolvimento de
-              ferramentas para o ADS.
-            </p>
-          </li>
-          <li class="experience__item">
-            <div class="year"><i class="bx bxs-calendar"></i> 2014 - 2018</div>
-            <h3>Booking</h3>
-            <p>
-              Cargo de desenvolvedor junior na equipe de desenvolvimento back
-              end.
-            </p>
-          </li>
-          <li class="experience__item">
-            <div class="year"><i class="bx bxs-calendar"></i> 2018 - 2021</div>
-            <h3>Facebook</h3>
-            <p>
-              Cargo de desenvolvedor pleno na equipe de criação da biblioteca
-              React.
-            </p>
-          </li>
-          <li class="experience__item">
+  <!-- Portfolio Section -->
+  <section class="portfolio" id="portfolio">
+    <div class="portfolio__header">
+      <h2 class="portfolio__title">| Portfolio</h2>
+      <div class="portfolio__buttons">
+        <button id="viewWebsites">Websites</button>
+        <button id="changeTheme"><i class="bx bxs-palette"></i></button>
+        <button id="camera"><i class="bx bxs-camera"></i></button>
+      </div>
+    </div>
+    <div class="portfolio__images">
+      <a href="website1.html"><img src="images/portfolio-website-1.jpg" alt="Projeto 1" /></a>
+      <a href="website2.html"><img src="images/portfolio-website-2.jpg" alt="Projeto 2" /></a>
+      <a href="website3.html"><img src="images/portfolio-website-3.jpg" alt="Projeto 3" /></a>
+      <a href="website4.html"><img src="images/portfolio-website-4.jpg" alt="Projeto 4" /></a>
+      <a href="website5.html"><img src="images/portfolio-website-6.jpg" alt="Projeto 5" /></a>
+      <a href="website6.html"><img src="images/portfolio-website-7.jpg" alt="Projeto 6" /></a>
+      <a href="website7.html" class="hidden">
+        <img src="images/portfolio-website-1.jpg" alt="Projeto 7" />
+      </a>
+      <a href="website8.html" class="hidden">
+        <img src="images/portfolio-website-2.jpg" alt="Projeto 8" />
+      </a>
+      <a href="website9.html" class="hidden">
+        <img src="images/portfolio-website-3.jpg" alt="Projeto 8" />
+      </a>
+    </div>
+    <button id="loadMore">More</button>
+  </section>
+
+  <!-- SKills -->
+  <section class="skills" id="skills">
+    <h2>| Skills</h2>
+    <ul class="skills__list">
+      <li>
+        <figure>
+          <figcaption>HTML</figcaption>
+          <img src="images/html.png" alt="Imagem 1" class="color-change" />
+          <figcaption>
+            <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i><i class="fa-solid fa-star fa-2xs"
+              style="color: #ffff00"></i><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i><i
+              class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i><i class="fa-solid fa-star fa-2xs"
+              style="color: #ffff00"></i>
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <figcaption>CSS</figcaption>
+          <img src="images/css.png" alt="Imagem 2" class="color-change" />
+          <figcaption>
+            <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i><i class="fa-solid fa-star fa-2xs"
+              style="color: #ffff00"></i><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i><i
+              class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i>
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <figcaption>C#</figcaption>
+          <img src="images/csharp.png" alt="Imagem 3" class="color-change" />
+          <figcaption>
+            <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i><i class="fa-solid fa-star fa-2xs"
+              style="color: #ffff00"></i><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i><i
+              class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i>
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <figcaption>JavaScript</figcaption>
+          <img src="images/javascript.png" alt="Imagem 4" class="color-change" />
+          <figcaption>
+            <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i><i class="fa-solid fa-star fa-2xs"
+              style="color: #ffff00"></i><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i><i
+              class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i>
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <figcaption>.NET Core</figcaption>
+          <img src="images/netcore.png" alt="Imagem 6" class="color-change" />
+          <figcaption>
+            <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i><i class="fa-solid fa-star fa-2xs"
+              style="color: #ffff00"></i><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i><i
+              class="fa-solid fa-star-half fa-2xs" style="color: #ffff00"></i>
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <figcaption>TypeScript</figcaption>
+          <img src="images/ts.png" alt="Imagem 7" class="color-change" />
+          <figcaption>
+            <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i><i class="fa-solid fa-star fa-2xs"
+              style="color: #ffff00"></i><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i><i
+              class="fa-solid fa-star-half fa-2xs" style="color: #ffff00"></i>
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <figcaption>React</figcaption>
+          <img src="images/react.png" alt="Imagem 8" class="color-change" />
+          <figcaption>
+            <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i><i class="fa-solid fa-star fa-2xs"
+              style="color: #ffff00"></i><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i><i
+              class="fa-solid fa-star-half fa-2xs" style="color: #ffff00"></i>
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <figcaption>Visual Studio Code</figcaption>
+          <img src="images/vscode.png" alt="Imagem 9" class="color-change" />
+          <figcaption>
+            <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i><i class="fa-solid fa-star fa-2xs"
+              style="color: #ffff00"></i><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i><i
+              class="fa-solid fa-star-half fa-2xs" style="color: #ffff00"></i>
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <figcaption>Git</figcaption>
+          <img src="images/git.png" alt="Imagem 10" class="color-change" />
+          <figcaption>
+            <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i><i class="fa-solid fa-star fa-2xs"
+              style="color: #ffff00"></i><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i><i
+              class="fa-solid fa-star-half fa-2xs" style="color: #ffff00"></i>
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <figcaption>PostgreSQL</figcaption>
+          <img src="images/postgresql.png" alt="Imagem 11" class="color-change" />
+          <figcaption>
+            <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i><i class="fa-solid fa-star fa-2xs"
+              style="color: #ffff00"></i><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i>
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <figcaption>Webpack</figcaption>
+          <img src="images/webpack.png" alt="Imagem 12" class="color-change" />
+          <figcaption>
+            <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i><i class="fa-solid fa-star fa-2xs"
+              style="color: #ffff00"></i><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i>
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <figcaption>Nginx</figcaption>
+          <img src="images/nginx.png" alt="Imagem 13" class="color-change" />
+          <figcaption>
+            <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i><i class="fa-solid fa-star fa-2xs"
+              style="color: #ffff00"></i><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i>
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <figcaption>Ubuntu</figcaption>
+          <img src="images/ubuntu.png" alt="Imagem 14" class="color-change" />
+          <figcaption>
+            <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i><i class="fa-solid fa-star fa-2xs"
+              style="color: #ffff00"></i><i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i>
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <figcaption>AWS</figcaption>
+          <img src="images/aws.png" alt="Imagem 15" class="color-change" />
+          <figcaption>
+            <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i><i class="fa-solid fa-star fa-2xs"
+              style="color: #ffff00"></i>
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <figcaption>Photoshop</figcaption>
+          <img src="images/photoshop.png" alt="Imagem 16" class="color-change" />
+          <figcaption>
+            <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i>
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <figcaption>Figma</figcaption>
+          <img src="images/figma.png" alt="Imagem 17" class="color-change" />
+          <figcaption>
+            <i class="fa-solid fa-star fa-2xs" style="color: #ffff00"></i>
+          </figcaption>
+        </figure>
+      </li>
+    </ul>
+  </section>
+
+  <section class="experience" id="experience">
+    <h2 class="experience__title">| Experience</h2>
+    <div class="experience__container">
+      <ul class="experience__list">
+        <li class="experience__item">
+          <div class="year"><i class="bx bxs-calendar"></i> 2012 - 2014</div>
+          <h3>Google</h3>
+          <p>
+            Estágio na Google atuando na equipe de desenvolvimento de
+            ferramentas para o ADS.
+          </p>
+        </li>
+        <li class="experience__item">
+          <div class="year"><i class="bx bxs-calendar"></i> 2014 - 2018</div>
+          <h3>Booking</h3>
+          <p>
+            Cargo de desenvolvedor junior na equipe de desenvolvimento back
+            end.
+          </p>
+        </li>
+        <li class="experience__item">
+          <div class="year"><i class="bx bxs-calendar"></i> 2018 - 2021</div>
+          <h3>Facebook</h3>
+          <p>
+            Cargo de desenvolvedor pleno na equipe de criação da biblioteca
+            React.
+          </p>
+        </li>
+        <li class="experience__item">
+          <div class="year">
+            <i class="bx bxs-calendar"></i> 2021 - Still Working
+          </div>
+          <h3>Twitter</h3>
+          <p>
+            Cargo de desenvolvedor sênior na equipe de criação do aplicativo
+            X.
+          </p>
+        </li>
+      </ul>
+      <div class="experience__right">
+        <div class="experience__box">
+          <h3>9</h3>
+          <p>Years of experience</p>
+        </div>
+        <div class="experience__box">
+          <h3>16</h3>
+          <p>Individual Projects</p>
+        </div>
+        <div class="experience__box">
+          <h3>72</h3>
+          <p>Team Projects</p>
+        </div>
+        <div class="experience__box">
+          <h3>87</h3>
+          <p>Specialization Courses</p>
+        </div>
+      </div>
+    </div>
+    <div class="experience__more">
+      <a href="https://drive.google.com/file/d/1IKXfYsowCm6W0_rjYUWFaufuW27pX_6K/view?usp=sharing" target="_blank"
+        class="btn">More</a>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="education" id="education">
+    <h2 class="education__title">| Education</h2>
+    <div class="education__padded-boxes">
+      <section>
+        <h3 class="education__heading">Bachelor and Postgraduate</h3>
+        <ul class="education__list">
+          <li>
             <div class="year">
-              <i class="bx bxs-calendar"></i> 2021 - Still Working
+              <i class="bx bxs-calendar"></i> 2012 - 2016
             </div>
-            <h3>Twitter</h3>
+            <h3>Computer Science</h3>
+            <p>Bachelor of Computer Science.</p>
+          </li>
+          <li>
+            <div class="year">
+              <i class="bx bxs-calendar"></i> 2012 - 2016
+            </div>
+            <h3>Big Data</h3>
+            <p>Postgraduate in Big Data by UFSC.</p>
+          </li>
+          <li>
+            <div class="year">
+              <i class="bx bxs-calendar"></i> 2012 - 2016
+            </div>
+            <h3>Applied Computing</h3>
+            <p>Master's in Applied Computing by UFSC.</p>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3 class="education__heading">Specialization Courses</h3>
+        <ul class="education__list">
+          <li>
+            <div class="year">
+              <i class="bx bxs-calendar"></i> 2019 - 2020
+            </div>
+            <h3>FrontEnd</h3>
             <p>
-              Cargo de desenvolvedor sênior na equipe de criação do aplicativo
-              X.
+              Front End course taught by Jackson Camara. Total of 500 hours
+              completed
+            </p>
+          </li>
+          <li>
+            <div class="year">
+              <i class="bx bxs-calendar"></i> 2021 - 2022
+            </div>
+            <h3>BackEnd</h3>
+            <p>
+              Front End course taught by Jackson Camara. Total of 500 hours
+              completed
+            </p>
+          </li>
+          <li>
+            <div class="year">
+              <i class="bx bxs-calendar"></i> 2023 - Still
+            </div>
+            <h3>FullStack</h3>
+            <p>
+              Front End course taught by Jackson Camara. Total of 500 hours
+              completed
             </p>
           </li>
         </ul>
-        <div class="experience__right">
-          <div class="experience__box">
-            <h3>9</h3>
-            <p>Years of experience</p>
-          </div>
-          <div class="experience__box">
-            <h3>16</h3>
-            <p>Individual Projects</p>
-          </div>
-          <div class="experience__box">
-            <h3>72</h3>
-            <p>Team Projects</p>
-          </div>
-          <div class="experience__box">
-            <h3>87</h3>
-            <p>Specialization Courses</p>
-          </div>
-        </div>
-      </div>
-      <div class="experience__more">
-        <a
-          href="https://drive.google.com/file/d/1IKXfYsowCm6W0_rjYUWFaufuW27pX_6K/view?usp=sharing"
-          target="_blank"
-          class="btn"
-          >More</a
-        >
-      </div>
-    </section>
-
-    <!-- Education Section -->
-    <section class="education" id="education">
-      <h2 class="education__title">| Education</h2>
-      <div class="education__padded-boxes">
-        <section>
-          <h3 class="education__heading">Bachelor and Postgraduate</h3>
-          <ul class="education__list">
-            <li>
-              <div class="year">
-                <i class="bx bxs-calendar"></i> 2012 - 2016
-              </div>
-              <h3>Computer Science</h3>
-              <p>Bachelor of Computer Science.</p>
-            </li>
-            <li>
-              <div class="year">
-                <i class="bx bxs-calendar"></i> 2012 - 2016
-              </div>
-              <h3>Big Data</h3>
-              <p>Postgraduate in Big Data by UFSC.</p>
-            </li>
-            <li>
-              <div class="year">
-                <i class="bx bxs-calendar"></i> 2012 - 2016
-              </div>
-              <h3>Applied Computing</h3>
-              <p>Master's in Applied Computing by UFSC.</p>
-            </li>
-          </ul>
-        </section>
-        <section>
-          <h3 class="education__heading">Specialization Courses</h3>
-          <ul class="education__list">
-            <li>
-              <div class="year">
-                <i class="bx bxs-calendar"></i> 2019 - 2020
-              </div>
-              <h3>FrontEnd</h3>
-              <p>
-                Front End course taught by Jackson Camara. Total of 500 hours
-                completed
-              </p>
-            </li>
-            <li>
-              <div class="year">
-                <i class="bx bxs-calendar"></i> 2021 - 2022
-              </div>
-              <h3>BackEnd</h3>
-              <p>
-                Front End course taught by Jackson Camara. Total of 500 hours
-                completed
-              </p>
-            </li>
-            <li>
-              <div class="year">
-                <i class="bx bxs-calendar"></i> 2023 - Still
-              </div>
-              <h3>FullStack</h3>
-              <p>
-                Front End course taught by Jackson Camara. Total of 500 hours
-                completed
-              </p>
-            </li>
-          </ul>
-        </section>
-        <section>
-          <h3 class="education__heading">Specialization Courses</h3>
-          <ul class="education__list">
-            <li>
-              <div class="year">
-                <i class="bx bxs-calendar"></i> 2017 - 2019
-              </div>
-              <h3>English</h3>
-              <p>English Course at UNIVALI Idiomas. Levels a1, a2. b1.</p>
-            </li>
-            <li>
-              <div class="year">
-                <i class="bx bxs-calendar"></i> 2020 - 2021
-              </div>
-              <h3>English</h3>
-              <p>English Course at Wizard. Levels b2, c1.</p>
-            </li>
-            <li>
-              <div class="year">
-                <i class="bx bxs-calendar"></i> 2021 - Still
-              </div>
-              <h3>English</h3>
-              <p>Private English course. Levels c2.</p>
-            </li>
-          </ul>
-        </section>
-      </div>
-      <div class="education__more">
-        <a
-          href="https://drive.google.com/file/d/1IKXfYsowCm6W0_rjYUWFaufuW27pX_6K/view?usp=sharing"
-          target="_blank"
-          class="btn"
-          >More</a
-        >
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-      <h2 class="contact__title">| Contact <span>Me!</span></h2>
-      <div class="contact__content">
-        <div class="contact__info">
-          <ul class="contact__list">
-            <li class="contact__item">
-              <div class="icon-box">
-                <div class="icon-bg">
-                  <i class="bx bx-envelope"></i>
-                </div>
-              </div>
-              <h3>Email:</h3>
-              <p>gabrielbller@icloud.com</p>
-            </li>
-            <li class="contact__item">
-              <div class="icon-box">
-                <div class="icon-bg">
-                  <i class="bx bx-phone"></i>
-                </div>
-              </div>
-              <h3>Telefone:</h3>
-              <p>(47) 9 9247-4767</p>
-            </li>
-            <li class="contact__item">
-              <div class="icon-box">
-                <div class="icon-bg">
-                  <i class="bx bxl-whatsapp"></i>
-                </div>
-              </div>
-              <h3>WhatsApp:</h3>
-              <p>(47) 9 9247-4767</p>
-            </li>
-            <li class="contact__item">
-              <div class="icon-box">
-                <div class="icon-bg">
-                  <i class="bx bxl-telegram"></i>
-                </div>
-              </div>
-              <h3>Telegram:</h3>
-              <p>(47) 9 9247-4767</p>
-            </li>
-            <li class="contact__item">
-              <div class="icon-box">
-                <div class="icon-bg">
-                  <i class="bx bxl-skype"></i>
-                </div>
-              </div>
-              <h3>Skype:</h3>
-              <p>gabrielbller</p>
-            </li>
-          </ul>
-        </div>
-        <div class="contact__form">
-          <form
-            action="https://formsubmit.co/gabrielbller@icloud.com"
-            method="POST"
-          >
-            <label for="name">Name:</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Name"
-              required
-            />
-
-            <label for="email">Email:</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email"
-              required
-            />
-
-            <label for="message">Message:</label>
-            <textarea
-              name="message"
-              id="message"
-              placeholder="Write here"
-              required
-            ></textarea>
-
-            <button type="submit" id="myBtn">Send</button>
-            <input type="hidden" name="_captcha" value="false" />
-          </form>
-        </div>
-      </div>
-
-      <div class="contact__social">
-        <ul class="contact__social-list">
-          <li class="contact__social-item">
-            <a
-              href="https://www.linkedin.com/in/gabrielbller/"
-              target="_blank"
-              aria-label="LinkedIn"
-            >
-              <div class="social__icon">
-                <i class="bx bxl-linkedin"></i>
-              </div>
-            </a>
+      </section>
+      <section>
+        <h3 class="education__heading">Specialization Courses</h3>
+        <ul class="education__list">
+          <li>
+            <div class="year">
+              <i class="bx bxs-calendar"></i> 2017 - 2019
+            </div>
+            <h3>English</h3>
+            <p>English Course at UNIVALI Idiomas. Levels a1, a2. b1.</p>
           </li>
-          <li class="contact__social-item">
-            <a
-              href="https://twitter.com/gabrielbller"
-              target="_blank"
-              aria-label="Twitter"
-            >
-              <div class="social__icon">
-                <i class="bx bxl-twitter"></i>
-              </div>
-            </a>
+          <li>
+            <div class="year">
+              <i class="bx bxs-calendar"></i> 2020 - 2021
+            </div>
+            <h3>English</h3>
+            <p>English Course at Wizard. Levels b2, c1.</p>
           </li>
-          <li class="contact__social-item">
-            <a
-              href="https://www.instagram.com/gabrielbller/"
-              target="_blank"
-              aria-label="Instagram"
-            >
-              <div class="social__icon">
-                <i class="bx bxl-instagram"></i>
-              </div>
-            </a>
+          <li>
+            <div class="year">
+              <i class="bx bxs-calendar"></i> 2021 - Still
+            </div>
+            <h3>English</h3>
+            <p>Private English course. Levels c2.</p>
           </li>
-          <li class="contact__social-item">
-            <a
-              href="https://www.youtube.com/channel/UCkufdOH6Dj9Uk8cYGv9dUsA"
-              target="_blank"
-              aria-label="YouTube"
-            >
-              <div class="social__icon">
-                <i class="bx bxl-youtube"></i>
+        </ul>
+      </section>
+    </div>
+    <div class="education__more">
+      <a href="https://drive.google.com/file/d/1IKXfYsowCm6W0_rjYUWFaufuW27pX_6K/view?usp=sharing" target="_blank"
+        class="btn">More</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2 class="contact__title">| Contact <span>Me!</span></h2>
+    <div class="contact__content">
+      <div class="contact__info">
+        <ul class="contact__list">
+          <li class="contact__item">
+            <div class="icon-box">
+              <div class="icon-bg">
+                <i class="bx bx-envelope"></i>
               </div>
-            </a>
+            </div>
+            <h3>Email:</h3>
+            <p>gabrielbller@icloud.com</p>
           </li>
-          <li class="contact__social-item">
-            <a
-              href="https://www.facebook.com/gabrielbller"
-              target="_blank"
-              aria-label="Facebook"
-            >
-              <div class="social__icon">
-                <i class="bx bxl-facebook"></i>
+          <li class="contact__item">
+            <div class="icon-box">
+              <div class="icon-bg">
+                <i class="bx bx-phone"></i>
               </div>
-            </a>
+            </div>
+            <h3>Telefone:</h3>
+            <p>(47) 9 9247-4767</p>
+          </li>
+          <li class="contact__item">
+            <div class="icon-box">
+              <div class="icon-bg">
+                <i class="bx bxl-whatsapp"></i>
+              </div>
+            </div>
+            <h3>WhatsApp:</h3>
+            <p>(47) 9 9247-4767</p>
+          </li>
+          <li class="contact__item">
+            <div class="icon-box">
+              <div class="icon-bg">
+                <i class="bx bxl-telegram"></i>
+              </div>
+            </div>
+            <h3>Telegram:</h3>
+            <p>(47) 9 9247-4767</p>
+          </li>
+          <li class="contact__item">
+            <div class="icon-box">
+              <div class="icon-bg">
+                <i class="bx bxl-skype"></i>
+              </div>
+            </div>
+            <h3>Skype:</h3>
+            <p>gabrielbller</p>
           </li>
         </ul>
       </div>
-    </section>
+      <div class="contact__form">
+        <form action="https://formsubmit.co/gabrielbller@icloud.com" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" placeholder="Name" required />
 
-    <!-- Rodape Section -->
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="Email" required />
 
-    <footer class="footer">
-      <div class="footer__text">
-        <p>Copyright &copy; 2023 by GabrieL | All Rights Reserved.</p>
+          <label for="message">Message:</label>
+          <textarea name="message" id="message" placeholder="Write here" required></textarea>
+
+          <button type="submit" id="myBtn">Send</button>
+          <input type="hidden" name="_captcha" value="false" />
+        </form>
       </div>
-      <div class="footer__iconTop">
-        <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
-      </div>
-    </footer>
+    </div>
 
-    <script src="script.js"></script>
-  </body>
+    <div class="contact__social">
+      <ul class="contact__social-list">
+        <li class="contact__social-item">
+          <a href="https://www.linkedin.com/in/gabrielbller/" target="_blank" aria-label="LinkedIn">
+            <div class="social__icon">
+              <i class="bx bxl-linkedin"></i>
+            </div>
+          </a>
+        </li>
+        <li class="contact__social-item">
+          <a href="https://twitter.com/gabrielbller" target="_blank" aria-label="Twitter">
+            <div class="social__icon">
+              <i class="bx bxl-twitter"></i>
+            </div>
+          </a>
+        </li>
+        <li class="contact__social-item">
+          <a href="https://www.instagram.com/gabrielbller/" target="_blank" aria-label="Instagram">
+            <div class="social__icon">
+              <i class="bx bxl-instagram"></i>
+            </div>
+          </a>
+        </li>
+        <li class="contact__social-item">
+          <a href="https://www.youtube.com/channel/UCkufdOH6Dj9Uk8cYGv9dUsA" target="_blank" aria-label="YouTube">
+            <div class="social__icon">
+              <i class="bx bxl-youtube"></i>
+            </div>
+          </a>
+        </li>
+        <li class="contact__social-item">
+          <a href="https://www.facebook.com/gabrielbller" target="_blank" aria-label="Facebook">
+            <div class="social__icon">
+              <i class="bx bxl-facebook"></i>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Rodape Section -->
+
+  <footer class="footer">
+    <div class="footer__text">
+      <p>Copyright &copy; 2023 by GabrieL | All Rights Reserved.</p>
+    </div>
+    <div class="footer__iconTop">
+      <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
-
-<!-- <div class="header__navbar-menu" id="menu-icon"></div>
-
-      <nav class="header__navbar">
-        <a href="#home" class="header__active"><i class="bx bxs-home"></i></a>
-        <a href="#about"><i class="bx bxs-user"></i></a>
-        <a href="#portfolio"><i class="bx bxs-briefcase"></i></a>
-        <a href="#skills"><i class="bx bx-code-alt"></i></a>
-        <a href="#experience"><i class="bx bxs-brain"></i></a>
-        <a href="#education"><i class="bx bxs-graduation"></i></a>
-        <a href="#contact"><i class="bx bxs-envelope"></i></a>
-
-        <a href="#menu" onclick="myFunction(this)"
-          ><i class="bx bx-menu"></i
-        ></a>
-      </nav> -->
