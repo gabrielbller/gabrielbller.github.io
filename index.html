@@ -8,49 +8,48 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 <body>
-  <div class="navbar-fixed">
-    <header class="menu-topo">
-      <a class="header__logo">GabrieL.</a>
-      <nav>
-        <ul class="cabecalho">
-          <li class="cabecalho__botao"><a href="#home" class="cabecalho__botao-clicavel"><i class="bx bxs-home"></i>
-              <p class="cabecalho__botao-texto">Home</p>
-            </a></li>
-          <li class="cabecalho__botao"><a href="#about" class="cabecalho__botao-clicavel"><i
-                class="fa-solid fa-user"></i>
-              <p class="cabecalho__botao-texto">About</p>
-            </a></li>
-          <li class="cabecalho__botao"> <a href="#portfolio" class="cabecalho__botao-clicavel"><i
-                class="fa-solid fa-suitcase"></i>
-              <p class="cabecalho__botao-texto">Portfolio</p>
-            </a></li>
-          <li class="cabecalho__botao"><a href="#skills" class="cabecalho__botao-clicavel"><i
-                class="fa-solid fa-brain"></i>
-              <p class="cabecalho__botao-texto">Skills</p>
-            </a></li>
-          <li class="cabecalho__botao"><a href="#experience" class="cabecalho__botao-clicavel"><i
-                class="fa-solid fa-user-tie"></i>
-              <p class="cabecalho__botao-texto">Experience</p>
-            </a></li>
-          <li class="cabecalho__botao"><a href="#education" class="cabecalho__botao-clicavel"><i
-                class="fa-solid fa-user-graduate"></i>
-              <p class="cabecalho__botao-texto">Education</p>
-            </a></li>
-          <li class="cabecalho__botao"><a href="#contact" class="cabecalho__botao-clicavel"><i
-                class="fa-solid fa-message"></i>
-              <p class="cabecalho__botao-texto">Contact</p>
-            </a></li>
-        </ul>
-        <div class="menu-topo__fundo"></div>
-        <div class="menu-barras">
-          <i class="fa-solid fa-bars"></i>
+
+  <nav class="navbar navbar-expand-custom navbar-mainbg">
+    <a class="navbar-brand navbar-logo" href="#">GabrieL.</a>
+    <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <i class="fas fa-bars text-white"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <div class="hori-selector">
+          <div class="left"></div>
+          <div class="right"></div>
         </div>
-      </nav>
-    </header>
-  </div>
+        <li class="nav-item">
+          <a class="nav-link" href="#home"><i class="bx bxs-home"></i>Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#about"><i class="fa-solid fa-user"></i>About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio"><i class="fa-solid fa-suitcase"></i>Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills"><i class="fa-solid fa-brain"></i>Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experience"><i class="fa-solid fa-user-tie"></i>Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#education"><i class="fa-solid fa-user-graduate"></i>Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact"><i class="fa-solid fa-message"></i>Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
   <section class="home" id="home">
     <div class="home__content">
@@ -82,23 +81,23 @@
       <h2 class="about__title">| About <span>Me</span></h2>
       <ul>
         <li class="about__titulo">NAME</li>
-        <li>GABRIEL BODENMÜLLER</li>
+        <li class="about__subtitulo">GABRIEL BODENMÜLLER</li>
       </ul>
       <ul>
         <li class="about__titulo">AGE</li>
-        <li>21 YEARS</li>
+        <li class="about__subtitulo">21 YEARS</li>
       </ul>
       <ul>
         <li class="about__titulo">PROFESSION</li>
-        <li>FULLSTACK DEVELOPER</li>
+        <li class="about__subtitulo">FULLSTACK DEVELOPER</li>
       </ul>
       <ul>
         <li class="about__titulo">NATIONALITY</li>
-        <li>BRAZILIAN</li>
+        <li class="about__subtitulo">BRAZILIAN</li>
       </ul>
       <ul>
         <li class="about__titulo">GITHUB</li>
-        <li>
+        <li class="about__subtitulo">
           <a class="about__titulo-link" href="https://github.com/gabrielbller"
             target="_blank">WWW.GITHUB.COM/GABRIELBLLER</a>
         </li>
@@ -481,7 +480,7 @@
   </section>
 
   <!-- Contact Section -->
-  <section class="contato secao" id="contato">
+  <section class="contato secao" id="contact">
     <div class="contato__container">
       <h2 class="contato__titulo titulo">| Contact <span>Me!</span></h2>
       <div class="contato__conteudo">
@@ -575,7 +574,17 @@
     </div>
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
   <script src="script.js"></script>
+
 </body>
 
 </html>
