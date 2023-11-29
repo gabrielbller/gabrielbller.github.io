@@ -102,39 +102,6 @@ $(document).ready(function () {
   updateNavbarOnScroll();
 });
 
-// // --------------add active class-on another-page move----------
-// jQuery(document).ready(function ($) {
-//   // Get current path and find target link
-//   var path = window.location.pathname.split("/").pop();
-
-//   // Account for home page with empty path
-//   if (path == "") {
-//     path = "index.html";
-//   }
-
-//   var target = $('#navbarSupportedContent ul li a[href="' + path + '"]');
-//   // Add active class to target link
-//   target.parent().addClass("active");
-// });
-
-// Add active class on another page linked
-// ==========================================
-// $(window).on('load',function () {
-//     var current = location.pathname;
-//     console.log(current);
-//     $('#navbarSupportedContent ul li a').each(function(){
-//         var $this = $(this);
-//         // if the current path is like this link, make it active
-//         if($this.attr('href').indexOf(current) !== -1){
-//             $this.parent().addClass('active');
-//             $this.parents('.menu-submenu').addClass('show-dropdown');
-//             $this.parents('.menu-submenu').parent().addClass('active');
-//         }else{
-//             $this.parent().removeClass('active');
-//         }
-//     })
-// });
-
 class FormSubmit {
   constructor(configs) {
     this.configs = configs;
@@ -243,3 +210,27 @@ const formSubmit = new FormSubmit({
 });
 
 formSubmit.init();
+
+const cabecalhoSites = document.getElementById("cabecalho__sites");
+cabecalhoSites.addEventListener("click", () => cabecalhoPortfolioOnClick(0));
+
+const cabecalhoPalette = document.getElementById("cabecalho__palette");
+cabecalhoPalette.addEventListener("click", () => cabecalhoPortfolioOnClick(1));
+
+const cabecalhoCamera = document.getElementById("cabecalho__camera");
+cabecalhoCamera.addEventListener("click", () => cabecalhoPortfolioOnClick(2));
+
+function cabecalhoPortfolioOnClick(numPagina) {
+  const totalPaginas = document
+    .getElementById("numPaginas")
+    .getAttribute("value");
+  const paginas = Array.from(
+    document.getElementsByClassName("secao-portfolio__pagina")
+  );
+
+  paginas.forEach(
+    (pagina) => (pagina.style.left = `${-(100 / totalPaginas) * numPagina}%`)
+  );
+}
+
+window.onscroll = ocultarFundo;
