@@ -606,8 +606,9 @@ span {
 
 .skills {
   height: auto;
+  width: 100%;
   text-align: center;
-  padding: 2.5vw;
+  padding: 3vw;
   width: 100%;
   background-color: #081b29;
 }
@@ -643,6 +644,8 @@ span {
   transform: scale(1.2);
 }
 
+
+
 .skills h2 {
   font-size: 3.333vw;
   margin-bottom: 1.04vw;
@@ -650,6 +653,14 @@ span {
   text-align: left;
   margin-left: 1.833vw;
   padding: 0 0 0 3.5vw;
+}
+
+.skills__color{
+  color: white;
+}
+
+.espaco{
+  padding: 3vw;
 }
 
 /* Experience Section */
