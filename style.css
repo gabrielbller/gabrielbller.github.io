@@ -22,7 +22,7 @@ body {
 }
 
 .navbar-logo:hover {
-  color: #00abf0;
+  color: #00abf0 !important;
 }
 
 .navbar-mainbg {
