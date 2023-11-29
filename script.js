@@ -91,7 +91,7 @@ function updateNavbarOnScroll() {
     var target = $(this).attr("href");
     $("html, body").animate(
       {
-        scrollTop: $(target).offset().top - navbarHeight,
+        scrollTop: $(target).offset().top,
       },
       500
     );
