@@ -41,7 +41,7 @@
 
 .secao-sobre__subtitulo {
   color: #00abf0;
-  font-size: clamp(1rem, 1.2rem, 1.2vw);
+  font-size: clamp(1.5rem, 1.8rem, 1.8vw);
 }
 
 .secao-sobre__topico {
@@ -53,15 +53,16 @@
   width: 50%;
   align-self: flex-start;
   display: flex;
-  margin-left: 5vw;
+  margin-left: 15vw;
+  justify-content: center;
 }
 
 .secao-sobre__foto {
-  width: 100%;
+  width: 75%;
 }
 
 .secao-sobre__botao {
-  padding-inline: 3rem;
+  padding-inline: 2rem;
   padding-block: 1rem;
   border-radius: 10px;
   font-size: clamp(1.2rem, 1.8rem, 1.8vw);
@@ -127,7 +128,6 @@
   margin-right: 4vw;
   border-radius: 5vw;
   width: 10px;
-  background-color: red;
 }
 
 @media (max-width: 1300px) and (orientation: portrait) {
